@@ -1,0 +1,463 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+#home {
+  height: 100vh;
+}
+
+#header {
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#header .headerTitle {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-left: 2rem;
+}
+
+#header .headerTitle span {
+  color: blue;
+}
+
+#header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header ul a {
+  text-decoration: none;
+  color: black;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+}
+
+#header ul a:hover {
+  color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+#header .headerBtn {
+  margin-right: 2rem;
+}
+
+#header .headerBtn button {
+  height: 2rem;
+  width: 6rem;
+  border-radius: 2rem;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#header .headerBtn button:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+#hero {
+  background-color: black;
+  height: calc(100vh - 3rem);
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#hero .heroContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero .heroContent .heroText {
+  margin-left: 2rem;
+  line-height: 2rem;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  height: 100%;
+}
+
+#hero .heroContent .heroText h2 {
+  font-size: 1.8rem;
+}
+
+#hero .heroContent .heroText p {
+  margin-top: .5rem;
+  text-align: justify;
+}
+
+#hero .heroContent .heroText .heroBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1rem;
+}
+
+#hero .heroContent .heroText .heroBtn button {
+  height: 2rem;
+  width: 20rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  font-weight: bolder;
+}
+
+#hero .heroContent .heroText .heroBtn button:hover {
+  background-color: white;
+  color: blue;
+}
+
+#hero .heroContent .heroImage {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+}
+
+#highlight {
+  width: 100%;
+  height: 30rem;
+  background-color: #f5f5b4;
+}
+
+#highlight .highlightTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+}
+
+#highlight .highlightContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 2rem;
+}
+
+#highlight .highlightContent p {
+  padding-right: 15rem;
+}
+
+#highlight .highlightContent .left,
+#highlight .highlightContent .right,
+#highlight .highlightContent .center {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  height: 100%;
+}
+
+#feature {
+  width: 100%;
+  height: 25rem;
+  background-color: #f5f5b4;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#feature .featureTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+}
+
+#feature .featureContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#feature .featureContent .left,
+#feature .featureContent .right {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+#product {
+  width: 100%;
+  height: 25rem;
+  background-color: #f5f5b4;
+}
+
+#product .productTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+}
+
+#product .productGrid {
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .7rem;
+}
+
+#product .productGrid .productCard {
+  border: 1px solid blue;
+  height: 19rem;
+  width: 25rem;
+  border-radius: 2rem;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#product .productGrid .productCard .rinzFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .1rem;
+}
+
+#product .productGrid .productCard .rinzFlex h4 {
+  font-weight: bolder;
+}
+
+#product .productGrid .productCard .rinzFlex .red {
+  background-color: red;
+  color: white;
+  border: none;
+  font-weight: bolder;
+  width: 4rem;
+  height: 1.5rem;
+}
+
+#product .productGrid .productCard .rinzFlex .yellow {
+  background-color: yellow;
+  color: black;
+  border: none;
+  font-weight: bolder;
+  width: 4rem;
+  height: 1.5rem;
+}
+
+#product .productGrid .productCard p {
+  padding: 0 1rem;
+}
+
+#product .productGrid .productCard button {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: blue;
+  color: white;
+}
+
+#product .productGrid .productCard button:hover {
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+}
+
+#comparison {
+  width: 100%;
+  height: 20rem;
+  background-color: #f5f5b4;
+}
+
+#comparison .compTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+}
+
+#comparison table {
+  width: 100%;
+  height: 15rem;
+  padding: 0 2rem;
+}
+
+#comparison table .btm {
+  background-color: #f5f5b4;
+}
+
+#comparison table .noBgImg {
+  background-color: #f5f5b4;
+}
+
+#comparison table td {
+  text-align: center;
+}
+
+#comparison table tr:nth-child(even) {
+  background-color: white;
+}
+
+#comparison table tr:nth-child(odd) {
+  background-color: rgba(235, 221, 221, 0.3);
+}
+
+#comparison table .aliLeft {
+  text-align: left;
+}
+
+#review {
+  width: 100%;
+  height: 15rem;
+  background-color: #f5f5b4;
+}
+
+#review .reviewTitle {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+}
+
+#review .reviewFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#review .reviewFlex .reviewImg {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3 right;
+          flex: 0.3 right;
+}
+
+#review .reviewFlex .reviewText {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+  position: relative;
+}
+
+#review .reviewFlex .reviewText h6 {
+  font-style: italic;
+  font-weight: lighter;
+  position: absolute;
+  right: 50%;
+  top: 5rem;
+}
+
+#contact {
+  background-color: #c8fcf7;
+  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#contact .contactTitle {
+  font-weight: bolder;
+  padding: 2rem 0 .5rem 0;
+}
+
+#contact .links li {
+  list-style: none;
+}
+
+#contact .links li a {
+  text-decoration: none;
+  color: black;
+}
+
+#contact .links li a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#contact .contactAdd h5 {
+  font-weight: lighter;
+}
+
+#contact .connect .socials {
+  margin-top: .7rem;
+}
+
+#contact .connect .socials span {
+  border: 1px solid blue;
+  padding: .5rem;
+}
+
+#contact .connect .socials .bx {
+  color: blue;
+}
+
+#contact .news p {
+  padding: .8rem 0;
+}
+
+#contact .news input {
+  height: 2rem;
+  width: 14rem;
+  border: none;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+
+#contact .news button {
+  height: 2rem;
+  width: 7rem;
+  border: 1px solid blue;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+}
+
+#contact .news button:hover {
+  background-color: white;
+  color: black;
+}
+/*# sourceMappingURL=index.css.map */
